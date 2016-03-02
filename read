@@ -1,0 +1,9 @@
+mpicc -c cal.c
+mpicc -c  read.c
+mpicc -c  small.c
+ 
+mpicc read.o small.o  cal.o  
+
+# -lfftw3 -lm -lstdc++  -lrt  -lpthread
+
+rm *.o
